@@ -1,0 +1,10 @@
+# Ignoring files
+.DS_Store
+additional_notes.txt
+config.py
+
+# Ignoring directories
+__pycache__/
+
+# Ignoring files with a "html" extensions
+*.html
