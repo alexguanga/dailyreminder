@@ -5,7 +5,6 @@ config.py
 
 # Ignoring directories
 __pycache__/
-images
 
 # Ignoring files with a "html" extensions
 *.html
