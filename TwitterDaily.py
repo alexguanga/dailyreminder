@@ -1,4 +1,4 @@
-import config
+import API_CONFIG
 import time
 from TwitterAPI import TwitterAPI
 from datetime import date, timedelta, datetime
@@ -15,10 +15,10 @@ YESTERDAY = YESTERDAY.strftime('%m%d%y')
 class TwitterDaily:
 
     def __init__(self):
-        consumer_secret = config.CONSUMER_SECRET
-        access_token_secret = config.ACCESS_TOKEN_SECRET
-        access_token_key = config.ACCESS_TOKEN_KEY
-        consumer_key = config.CONSUMER_KEY
+        consumer_secret = API_CONFIG.CONSUMER_SECRET
+        access_token_secret = API_CONFIG.ACCESS_TOKEN_SECRET
+        access_token_key = API_CONFIG.ACCESS_TOKEN_KEY
+        consumer_key = API_CONFIG.CONSUMER_KEY
         self.api = TwitterAPI(consumer_key, consumer_secret, access_token_key, access_token_secret)
 
     def format_date(self, date):

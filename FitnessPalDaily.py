@@ -1,5 +1,5 @@
 import myfitnesspal
-import config
+import API_CONFIG
 from datetime import date, timedelta, datetime
 from collections import defaultdict
 
@@ -13,8 +13,8 @@ YESTERDAY = YESTERDAY.strftime('%m%d%y')
 class FitnessPalDaily:
 
     def __init__(self,):
-        username = config.FITNESS_PAL_USERNAME
-        password = config.FITNESS_PAL_PASSWORD
+        username = API_CONFIG.FITNESS_PAL_USERNAME
+        password = API_CONFIG.FITNESS_PAL_PASSWORD
         self.client = myfitnesspal.Client(username, password)
         self.YESTERDAY = self.date_to_datetime()
 

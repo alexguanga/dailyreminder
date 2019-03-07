@@ -1,6 +1,6 @@
 import todoist
 from datetime import date, timedelta, datetime
-import config
+import API_API_CONFIG
 
 ######
 YESTERDAY = date.today() - timedelta(1)
@@ -10,7 +10,7 @@ YESTERDAY = YESTERDAY.strftime('%m%d%y')
 
 class PodcastDaily:
     def __init__(self):
-        self.api = todoist.TodoistAPI(config.TODOIST_ACCESS_TOKEN_KEY)
+        self.api = todoist.TodoistAPI(API_CONFIG.TODOIST_ACCESS_TOKEN_KEY)
         self.api.sync()
         self.todo_projects = self.api.state['projects']
 

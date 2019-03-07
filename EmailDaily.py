@@ -4,7 +4,7 @@
 # TODO: Work on improving the way the information is printed
 import email
 import smtplib
-import config
+import API_CONFIG
 import itertools
 from datetime import date, timedelta, datetime
 from PodcastDaily import PodcastDaily
@@ -21,10 +21,10 @@ YESTERDAY = YESTERDAY.strftime('%m%d%y')
 
 class EmailDaily:
     def __init__(self):
-        self.FROM = config.EMAIL_ADDRESS
-        self.TO = config.EMAIL_ADDRESS
-        self.username = config.EMAIL_ADDRESS
-        self.password = config.EMAIL_PASSWORD
+        self.FROM = API_CONFIG.EMAIL_ADDRESS
+        self.TO = API_CONFIG.EMAIL_ADDRESS
+        self.username = API_CONFIG.EMAIL_ADDRESS
+        self.password = API_CONFIG.EMAIL_PASSWORD
 
     def send_message(self):
         server = smtplib.SMTP("smtp.gmail.com", 587)
