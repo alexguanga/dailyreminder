@@ -25,7 +25,16 @@ cd ./dailyreminder
 ```
 
 ### API Configuration
-After the API's Requirements are correctly configured, include them into  
+After the API's Requirements are correctly configured, include them into API_CONFIG.py file. Include information accordingly to their specific task.
+
+
+### Run Script
+```
+python3 __main__.py
 ```
 
-```
+---
+## Output
+
+Below is an email example (what I receive every morning)
+![Alt text](/images/DailyJournal.png)

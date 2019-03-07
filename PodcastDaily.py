@@ -1,6 +1,6 @@
 import todoist
 from datetime import date, timedelta, datetime
-import API_API_CONFIG
+import API_CONFIG
 
 ######
 YESTERDAY = date.today() - timedelta(1)
